@@ -1,5 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function SearchEngine() {
-  return <div className="SearchEngine">Hello from Search Engine</div>;
+  const [word, setWord] = useState(" ");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert(`Searching for ${word}`);
+  }
+
+  function handleWordSearch(event) {
+    setWord(event.target.value);
+  }
+
+  return (
+    <div className="SearchEngine">
+      <form onSubmit={handleSubmit}>
+        <input
+          type="search"
+          placeholder="enter any word"
+          onChange={handleWordSearch}
+        ></input>
+      </form>
+    </div>
+  );
 }
