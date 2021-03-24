@@ -1,11 +1,18 @@
 import "./App.css";
+import SearchEngine from "./SearchEngine";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Hello World</p>
-      </header>
+      <div className="container">
+        <header className="App-header">
+          <p>Header</p>
+        </header>
+        <SearchEngine />
+        <footer className="App-footer">
+          <p>Footer</p>
+        </footer>
+      </div>
     </div>
   );
 }
