@@ -1,5 +1,5 @@
 import "./App.css";
-import SearchEngine from "./SearchEngine";
+import Dictionary from "./Dictionary";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <header className="App-header">
           <p>Header</p>
         </header>
-        <SearchEngine />
+        <Dictionary />
         <footer className="App-footer">
           <p>Footer</p>
         </footer>
