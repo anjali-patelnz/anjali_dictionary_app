@@ -6,11 +6,13 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <p>Header</p>
+          <h1>Dictionary</h1>
         </header>
         <Dictionary />
         <footer className="App-footer">
-          <p>Footer</p>
+          <p>
+            <small>Coded by Anjali Patel and open-sourced on GitHub</small>
+          </p>
         </footer>
       </div>
     </div>
