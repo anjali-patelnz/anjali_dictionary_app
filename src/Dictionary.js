@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import SearchResults from "./SearchResults";
 
 export default function Dictionary() {
   const [word, setWord] = useState(" ");
+  let [searchResults, setSearchResults] = useState(null);
 
   function handleApiCall(response) {
-    console.log(response.data);
+    setSearchResults(response.data[0]);
   }
 
   function search() {
@@ -35,6 +37,8 @@ export default function Dictionary() {
   return (
     <div className="Dictionary">
       <div className="SearchEngine">{SearchEngine}</div>
+
+      <SearchResults data={searchResults} />
     </div>
   );
 }
