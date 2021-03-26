@@ -9,15 +9,10 @@ export default function SearchResults(props) {
         {props.data.meanings.map(function (meaning, index) {
           return (
             <div key={index}>
-              <h4>{meaning.partOfSpeech}</h4>
-              <p>{meaning.definitions[0].definition}</p>
-              <p>
-                <em>{meaning.definitions[0].example}</em>
-              </p>
+              <Definitions data={meaning} />
             </div>
           );
         })}
-        <Definitions />
       </div>
     );
   } else {
