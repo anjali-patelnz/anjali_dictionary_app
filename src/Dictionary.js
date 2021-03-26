@@ -8,6 +8,7 @@ export default function Dictionary() {
 
   function handleApiCall(response) {
     setSearchResults(response.data[0]);
+    console.log(response.data);
   }
 
   function search() {
