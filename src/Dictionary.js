@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import axios from "axios";
 import SearchResults from "./SearchResults";
 
+import "./Dictionary.css";
+
 export default function Dictionary() {
   const [word, setWord] = useState(" ");
   let [searchResults, setSearchResults] = useState(null);
 
   function handleApiCall(response) {
     setSearchResults(response.data[0]);
-    console.log(response.data);
   }
 
   function search() {
