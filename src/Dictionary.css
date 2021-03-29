@@ -1,0 +1,22 @@
+.hero {
+  background: url(./Images/library.jpg);
+  width: 100%;
+  background-size: cover;
+  height: 60vh;
+}
+
+.hero h1,
+.hero h2 {
+  color: white;
+  text-align: center;
+}
+
+.SearchEngine form,
+.SearchEngine input {
+  display: block;
+  margin: 0 auto;
+}
+
+.SearchEngine input {
+  width: 50%;
+}

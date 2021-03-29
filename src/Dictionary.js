@@ -38,8 +38,13 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <div className="SearchEngine">{SearchEngine}</div>
-
+      <section className="hero d-flex align-items-center justify-content-center">
+        <div className="container">
+          <h1>What do you mean?</h1>
+          <h2>Enter your dictionary search term:</h2>
+          <div className="SearchEngine">{SearchEngine}</div>
+        </div>
+      </section>
       <SearchResults data={searchResults} />
     </div>
   );
