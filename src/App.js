@@ -7,9 +7,27 @@ function App() {
       <div className="container">
         <Dictionary />
         <footer className="App-footer">
-          <p>
-            <small>Coded by Anjali Patel and open-sourced on GitHub</small>
-          </p>
+          <div className="container">
+            <div className="footnote">
+              <p className="text-center">
+                <small>
+                  This site was coded by{" "}
+                  <a href="https://focused-johnson-3a2ad6.netlify.app/">
+                    Anjali Patel
+                  </a>{" "}
+                  and is open-sourced on{" "}
+                  <a href="https://github.com/anjali-patelnz/anjali_dictionary_app">
+                    GitHub
+                  </a>
+                </small>
+              </p>
+            </div>
+            <div className="social-links d-flex justify-content-evenly">
+              <a href="https://focused-johnson-3a2ad6.netlify.app/">Profile</a>
+              <a href="https://www.linkedin.com/in/anjalipatelnz/">LinkedIn</a>
+              <a href="https://github.com/anjali-patelnz">GitHub</a>
+            </div>
+          </div>
         </footer>
       </div>
     </div>
