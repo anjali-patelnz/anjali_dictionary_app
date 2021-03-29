@@ -30,7 +30,7 @@ export default function Dictionary() {
     <form onSubmit={handleSubmit}>
       <input
         type="search"
-        placeholder="enter any word"
+        placeholder="Search for a word"
         onChange={handleWordSearch}
       ></input>
     </form>
