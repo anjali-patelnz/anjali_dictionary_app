@@ -23,9 +23,15 @@ function App() {
               </p>
             </div>
             <div className="social-links d-flex justify-content-evenly">
-              <a href="https://focused-johnson-3a2ad6.netlify.app/">Profile</a>
-              <a href="https://www.linkedin.com/in/anjalipatelnz/">LinkedIn</a>
-              <a href="https://github.com/anjali-patelnz">GitHub</a>
+              <a href="https://focused-johnson-3a2ad6.netlify.app/">
+                <i className="fas fa-user-alt"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/anjalipatelnz/">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/anjali-patelnz">
+                <i className="fab fa-github-square"></i>
+              </a>
             </div>
           </div>
         </footer>
