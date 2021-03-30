@@ -1,0 +1,12 @@
+.Phonetics .phonetics-text {
+  margin-right: 5px;
+  color: #aab3c7;
+}
+
+.Phonetics .phonetics-audio {
+  margin-right: 20px;
+}
+
+.Phonetics .phonetics-audio a {
+  color: #f8db85;
+}
