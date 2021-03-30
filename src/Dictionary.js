@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import SearchResults from "./SearchResults";
+import PhotoSearch from "./PhotoSearch";
 
 import "./Dictionary.css";
 
@@ -46,6 +47,7 @@ export default function Dictionary() {
         </div>
       </section>
       <SearchResults data={searchResults} />
+      <PhotoSearch />
     </div>
   );
 }
