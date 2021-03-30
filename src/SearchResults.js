@@ -19,13 +19,15 @@ export default function SearchResults(props) {
             );
           })}
         </section>
-        {props.data.meanings.map(function (meaning, index) {
-          return (
-            <div key={index}>
-              <Definitions data={meaning} />
-            </div>
-          );
-        })}
+        <section>
+          {props.data.meanings.map(function (meaning, index) {
+            return (
+              <div key={index}>
+                <Definitions data={meaning} />
+              </div>
+            );
+          })}
+        </section>
       </div>
     );
   } else {
