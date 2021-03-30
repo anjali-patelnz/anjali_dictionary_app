@@ -9,15 +9,17 @@ export default function SearchResults(props) {
     return (
       <div className="SearchResults">
         <section className="results-header">
-          <h2>{props.data.word}</h2>
+          <div className="container">
+            <h2>{props.data.word}</h2>
 
-          {props.data.phonetics.map(function (phonetic, index) {
-            return (
-              <ul key={index}>
-                <Phonetics data={phonetic} />
-              </ul>
-            );
-          })}
+            {props.data.phonetics.map(function (phonetic, index) {
+              return (
+                <ul key={index}>
+                  <Phonetics data={phonetic} />
+                </ul>
+              );
+            })}
+          </div>
         </section>
         <section>
           {props.data.meanings.map(function (meaning, index) {

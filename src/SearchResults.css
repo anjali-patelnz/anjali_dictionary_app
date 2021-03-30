@@ -1,5 +1,6 @@
 .SearchResults .results-header {
-  padding: 50px 0 20px;
+  padding: 35px 20px 15px;
+  background-color: #d2d8e4;
 }
 
 .SearchResults .results-header h2 {
