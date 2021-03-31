@@ -1,4 +1,28 @@
 .App-footer {
-  background: #f4f5f8;
+  background: #e1e5f1;
   margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.App-footer .footnote {
+  color: #414c64;
+  font-size: 13px;
+}
+
+.App-footer .footnote a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.App-footer .social-links a {
+  font-size: 18px;
+  background: #d0daf5;
+  color: #5f6f92;
+  padding: 8px 15px;
+  border-radius: 50%;
+}
+
+.App-footer .social-links a:hover {
+  background: #ffc107;
 }
