@@ -15,9 +15,10 @@ export default function Definitions(props) {
               <div key={index}>
                 <div className="definitions-breakdown">
                   <p>
-                    {definition.definition}
-                    <br />
-                    <em>{definition.example}</em>
+                    <strong>{definition.definition}</strong>
+                  </p>
+                  <p>
+                    <em className="example">{definition.example}</em>
                   </p>
                   <Synonyms data={definition.synonyms} />
                 </div>

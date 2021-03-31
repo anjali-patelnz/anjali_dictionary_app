@@ -1,16 +1,17 @@
 .Definitions {
   background: #f8f8f8;
-  padding: 35px 20px 15px;
+  padding: 25px 20px 0;
 }
 
 .Definitions .definitions-breakdown {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  line-height: 1.5;
 }
 
 .Definitions h4 {
   color: #ffc107;
 }
 
-.Definitions p {
-  margin-bottom: 0;
+.Definitions .example {
+  margin-top: 5px;
 }
