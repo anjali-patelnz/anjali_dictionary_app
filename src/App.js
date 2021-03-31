@@ -31,6 +31,11 @@ function App() {
                 <i className="fab fa-github-square"></i>
               </a>
             </div>
+            <div className="credits">
+              <p>
+                Photos provided by <a href="https://www.pexels.com">Pexels</a>
+              </p>
+            </div>
           </div>
         </footer>
       </div>

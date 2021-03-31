@@ -2,19 +2,22 @@
   background: #e1e5f1;
   margin-top: 20px;
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
-.App-footer .footnote {
+.App-footer .footnote,
+.credits {
   color: #414c64;
   font-size: 13px;
 }
 
-.App-footer .footnote a {
+.App-footer .footnote a,
+.credits a {
   color: #ffc107;
   text-decoration: none;
 }
-
+.App-footer .credits {
+  margin-top: 10px;
+}
 .App-footer .social-links a {
   font-size: 18px;
   background: #d0daf5;
