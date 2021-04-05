@@ -2,6 +2,7 @@
   background: #e1e5f1;
   margin-top: 20px;
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .App-footer .footnote,
@@ -12,7 +13,7 @@
 
 .App-footer .footnote a,
 .credits a {
-  color: #ffc107;
+  color: #db5319;
   text-decoration: none;
 }
 .App-footer .credits {
@@ -27,5 +28,5 @@
 }
 
 .App-footer .social-links a:hover {
-  background: #ffc107;
+  background: #eb5c1f;
 }
