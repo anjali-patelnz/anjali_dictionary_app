@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./PhotoSearch.css";
+
 export default function PhotoSearch(props) {
   if (props.data) {
     return (
