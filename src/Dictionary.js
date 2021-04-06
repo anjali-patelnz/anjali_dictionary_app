@@ -5,12 +5,14 @@ import PhotoSearch from "./PhotoSearch";
 
 import "./Dictionary.css";
 
-export default function Dictionary() {
-  const [word, setWord] = useState(" ");
+export default function Dictionary(props) {
+  const [loaded, setLoaded] = useState(false);
+  const [word, setWord] = useState(props.defaultWord);
   let [searchResults, setSearchResults] = useState(null);
   let [gallery, setGallery] = useState(null);
 
   function handleDictionaryApiCall(response) {
+    setLoaded(true);
     setSearchResults(response.data[0]);
   }
 
@@ -51,17 +53,23 @@ export default function Dictionary() {
     </form>
   );
 
-  return (
-    <div className="Dictionary">
-      <section className="hero d-flex align-items-center justify-content-center">
-        <div className="container">
-          <h1>What do you mean?</h1>
-          <h2>Enter your dictionary search term:</h2>
-          <div className="SearchEngine">{SearchEngine}</div>
-        </div>
-      </section>
-      <SearchResults data={searchResults} />
-      <PhotoSearch data={gallery} />
-    </div>
-  );
+  if (loaded) {
+    return (
+      <div className="Dictionary">
+        <section className="hero d-flex align-items-center justify-content-center">
+          <div className="container">
+            <h1>What do you mean?</h1>
+            <h2>Enter your dictionary search term:</h2>
+            <div className="SearchEngine">{SearchEngine}</div>
+          </div>
+        </section>
+        <SearchResults data={searchResults} />
+        <PhotoSearch data={gallery} />
+      </div>
+    );
+  } else {
+    search();
+
+    return "Loading....";
+  }
 }

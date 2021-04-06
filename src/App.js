@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Dictionary />
+        <Dictionary defaultWord="Dictionary" />
         <footer className="App-footer">
           <div className="container">
             <div className="footnote">
